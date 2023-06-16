@@ -1,0 +1,97 @@
+/* Students top bar */
+
+.getStudents form {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.getStudents form select {
+    width: 200px;
+    cursor: pointer;
+    outline: none;
+    color: var(--secondary-blue);
+    border: 1px solid var(--secondary-blue);
+    background-color: transparent;
+}
+
+.getStudents form option {
+    color: rgb(32, 32, 32);
+    background-color: rgb(235, 220, 206);
+    margin: 8px;
+}
+
+
+/* Students Table */
+
+.studentLists .pending {
+    color: #b00000;
+}
+
+.studentLists .complete {
+    color: #008530;
+}
+
+.totalStudents {
+    margin-top: 15px;
+    font-weight: 600;
+    color: grey;
+}
+
+.studentLists input[type='Checkbox'] {
+    width: 16px;
+    height: 16px;
+}
+
+.batchAddDiv {
+    margin-top: 20px;
+    max-width: 700px;
+}
+
+.batchAddDiv .code {
+    background-color: rgb(59, 59, 59);
+    color: white;
+    padding: 20px;
+    margin-top: 10px;
+    font-size: 1rem;
+    line-height: 22px;
+}
+
+.batchAddDiv .code p:nth-child(2) {
+    margin-top: 10px;
+    line-height: 25px;
+    color: greenyellow;
+}
+
+.updateAllDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    min-width: 240px;
+}
+
+.updateAllDiv>select {
+    margin-bottom: 6px;
+}
+
+.updateAllDiv>select:nth-child(3) {
+    margin-bottom: 25px;
+}
+
+.updateAllDiv>.btn {
+    height: 38px;
+    width: 100%;
+}
+
+.updateDivWrapper {
+    position: fixed;
+    background-color: #eaeff7;
+    z-index: 99;
+    bottom: 0;
+    padding: 40px 20px;
+    top: 0;
+    right: 0;
+    box-shadow: -1px 0px 19px -4px #0000002e;
+}

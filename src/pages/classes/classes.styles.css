@@ -1,0 +1,40 @@
+.classesWrapper {
+  border: 1px solid grey;
+  /* width: max(70%, 800px); */
+}
+
+.classHeader {
+  font-size: 1.4rem;
+  background-color: #6824b0;
+  color: white;
+  padding: 12px 20px;
+}
+
+.classesWrapper .classLists {
+  padding: 20px 15px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px;
+}
+
+.classesWrapper .classTeacherCard {
+  background-color: rgb(255, 255, 255);
+  padding: 15px;
+  border-radius: 4px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.classTeacherCard .name {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.classesWrapper .subject {
+  font-size: 1.1rem;
+  margin: 4px 0 7px;
+}
+.classesWrapper .bottom {
+  display: flex;
+  gap: 10px;
+  color: #737373;
+}

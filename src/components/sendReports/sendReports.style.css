@@ -1,0 +1,16 @@
+form.sendReportWrapper select {
+  width: 230px;
+}
+
+form.sendReportWrapper {
+  align-items: center;
+}
+form.sendReportWrapper button {
+  padding: 7px 2px;
+}
+
+form.sendReportWrapper p {
+  font-size: 1.2rem;
+  color: darkblue;
+  padding: 0;
+}

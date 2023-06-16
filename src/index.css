@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    overflow: hidden;
+}
+
+#root {
+    display: flex;
+    min-height: 100%;
+    flex-direction: column;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+
+button {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    padding-block: 8px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+button:disabled {
+    cursor: not-allowed;
+}
+
+:root {
+    --primary-blue: #e8881a;
+    --input-color: #80868b;
+    --border-color: #e0ddda;
+    --form-border: ##cedcf1;
+    --body-background: #f7eedf;
+    --gray-1: #998f80;
+    --secondary-purple: #c2865e;
+    --secondary-blue: #c18c2f;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--body-background);
+    -webkit-tap-highlight-color: transparent;
+    height: 100%;
+    overflow: auto;
+    scroll-behavior: smooth;
+}
+
+.wrapper {
+    width: 93%;
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+input,
+select {
+    padding: 9px 10px 9px 12px;
+    font-size: 1.1rem;
+    border: 1px solid grey;
+    border-radius: 4px;
+    background-color: white;
+}
+
+.loadingMain {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    font-size: 3rem;
+    color: var(--gray-1);
+}
+
+.btn {
+    border-radius: 4px;
+    font-size: 1.1rem;
+    width: 160px;
+}
+
+.primary {
+    background-color: var(--secondary-blue);
+    border-bottom: 2.5px solid rgb(146, 95, 6);
+    color: whitesmoke;
+}
+
+.secondary {
+    background-color: var(--secondary-purple);
+    color: white;
+}
+
+.green {
+    background-color: #0f8c11;
+    color: white;
+}
+
+.red {
+    background-color: #ca3b0c;
+    color: white;
+}
+
+.border-grey,
+.border-blue {
+    padding-block: 7px;
+}
+
+.border-grey {
+    border: 1px solid grey;
+    color: rgb(69, 69, 69);
+}
+
+.border-blue {
+    border: 1px solid var(--secondary-blue);
+    color: var(--secondary-blue);
+    background-color: rgb(255, 239, 215);
+}
+
+.border-red {
+    border: 1px solid #ca3b0c;
+    color: #ca3b0c;
+    background-color: rgb(255, 200, 200);
+}
+
+.border-grey:hover {
+    background-color: #beb7ae;
+    color: rgb(0, 0, 0);
+}
+
+.border-blue:hover {
+    background-color: rgb(243, 215, 170);
+}
+
+.border-red:hover {
+    color: #9b2802;
+    background-color: rgb(248, 180, 180);
+}
+
+.border-blue:active {
+    background-color: rgb(194, 146, 95);
+    color: white;
+}
+
+.border-red:active {
+    color: #ffffff;
+    background-color: rgb(229, 57, 57);
+}
+
+.medium {
+    width: 180px;
+}
+
+.btn.primary:hover:not(:disabled) {
+    background-color: #ac6b15;
+}
+
+.btn.secondary:hover:not(:disabled) {
+    background-color: #aa8549;
+}
+
+.btn.green:hover:not(:disabled) {
+    background-color: #0c780e;
+}
+
+.btn.red:hover:not(:disabled) {
+    background-color: #aa330b;
+}
+
+.btn.primary:active:not(:disabled) {
+    border-color: #ac6d15;
+    transform: scale(0.97);
+}
+
+.btn.secondary:active:not(:disabled),
+.btn.green:active:not(:disabled),
+.btn.red:active:not(:disabled),
+.btn.border-grey:active,
+.btn.border-red:active,
+.btn.border-blue:active {
+    transform: translateY(4px);
+}
+
+.btn.secondary:active:not(:disabled) {
+    background-color: #84652e;
+}
+
+.btn.green:active:not(:disabled) {
+    background-color: #08590a;
+}
+
+.btn.red:active:not(:disabled) {
+    background-color: #912906;
+}
+
+.btn.border-grey:active {
+    background-color: #a09380;
+    border-color: black;
+    color: white;
+}
+
+.btn.primary:disabled {
+    background-color: #c77a1cb6;
+    border-bottom-color: rgba(146, 83, 6, 0.61);
+}
+
+.btn.secondary:disabled,
+.btn.green:disabled,
+.btn.red:disabled {
+    opacity: 0.65;
+}
+
+.noDataTable {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    color: #ba0505;
+}
+
+.toastBtn {
+    padding: 8px 10px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(227, 227, 227);
+    border-radius: 7px;
+}
+
+.toastDiv {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mobileVersion {
+    display: none;
+}
+
+
+/* For Print */
+
+@media print {
+    html,
+    body {
+        height: initial !important;
+        overflow: initial !important;
+        -webkit-print-color-adjust: exact;
+    }
+}
+
+@media screen and (max-width: 1170px) {
+    .admin {
+        display: none;
+    }
+    .mobileVersion {
+        display: grid;
+        place-items: center;
+        height: 100vh;
+        width: 100%;
+        font-size: 1.1rem;
+        color: grey;
+    }
+}

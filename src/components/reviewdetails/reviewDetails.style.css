@@ -1,0 +1,52 @@
+.reviewCardWrapper {
+  display: flex;
+  gap: 30px;
+  margin: 30px 0;
+}
+
+.reviewCardWrapper .reviewCard {
+  padding: 16px 21px;
+  box-shadow: 0 2px 18px -2px rgba(0, 0, 0, 0.248);
+  display: flex;
+  flex-direction: column;
+  font-size: 1.1rem;
+  align-items: center;
+  gap: 10px;
+  border-radius: 7px;
+  border-top: 3px solid blueviolet;
+}
+
+.reviewCard p {
+  color: rgb(29, 29, 29);
+}
+
+.reviewCard p.numbers {
+  font-size: 2rem;
+  color: blueviolet;
+}
+.reviewCard:nth-child(2) {
+  border-color: rgb(61, 63, 202);
+}
+.reviewCard:nth-child(3) {
+  border-color: red;
+}
+
+.reviewCard:nth-child(4) {
+  border-color: rgb(0, 197, 3);
+}
+
+.reviewCard:nth-child(2) p.numbers {
+  color: rgb(61, 63, 202);
+}
+.reviewCard:nth-child(3) p.numbers {
+  color: red;
+}
+.reviewCard:nth-child(4) p.numbers {
+  color: rgb(0, 197, 3);
+}
+p.reviewLoading {
+  margin-top: 29px;
+  font-size: 1.5rem;
+  color: rgb(139, 100, 175);
+  margin-left: 15px;
+}

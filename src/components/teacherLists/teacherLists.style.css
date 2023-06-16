@@ -1,0 +1,93 @@
+.teacherLists,
+.studentLists {
+  margin-top: 30px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 20px 0;
+}
+
+td,
+th {
+  border: 1px solid #ddd;
+  padding: 8px 10px;
+}
+
+tr:nth-child(even) {
+  background-color: #ece6e6;
+}
+
+tr:hover {
+  background-color: rgb(208, 205, 248);
+}
+.teacherLists td:nth-child(2) {
+  text-transform: uppercase;
+}
+.studentLists td:nth-child(2),
+.studentLists td:nth-child(4),
+.studentLists td:nth-child(6) {
+  text-transform: uppercase;
+}
+
+.teacherLists td:nth-child(3),
+.teacherLists td:nth-child(4),
+.teacherLists td:nth-child(7),
+.teacherLists td:nth-child(6),
+.teacherLists td:nth-child(2) {
+  text-align: center;
+}
+.studentLists td {
+  text-align: center;
+}
+
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #6824b0;
+  color: white;
+}
+
+.teacherLists th:not(:nth-child(4), :nth-child(7)) {
+  min-width: 115px;
+  position: relative;
+}
+
+.studentLists th:not(:nth-child(1), :nth-child(8)) {
+  min-width: 115px;
+  position: relative;
+}
+
+table .iconSort {
+  position: absolute;
+  right: 6px;
+  top: 8px;
+  font-size: 1.6rem;
+}
+
+.teacherLists .editBtn,
+.studentLists .editBtn {
+  color: red;
+  font-weight: 600;
+  width: 100%;
+}
+
+/* Filters */
+.filters {
+  margin-bottom: 10px;
+}
+
+.filterForm {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.filterForm input {
+  flex-grow: 1;
+  max-width: 400px;
+}
+.studentLists .filterForm input {
+  max-width: 300px;
+}

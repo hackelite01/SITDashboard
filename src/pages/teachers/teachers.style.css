@@ -1,0 +1,120 @@
+.teacherAddUpdate {
+    margin-top: 20px;
+}
+
+.teacherAddUpdate form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: min(80%, 1400px);
+}
+
+.teacherAddUpdate .formDiv {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.teacherAddUpdate .formDiv input,
+.teacherAddUpdate .formDiv select {
+    flex: 1 0 0;
+}
+
+.teacherAddUpdate .btnDiv button {
+    margin-right: 10px;
+}
+
+.teachersWrapper .mainBtnDiv {
+    display: flex;
+    gap: 10px;
+}
+
+
+/* Checkboxes */
+
+.checkBoxes {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-block: 7px;
+    font-size: 1.2rem;
+}
+
+.sectionSpan {
+    color: grey;
+}
+
+.checkBox {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.checkBox input[type='checkbox'] {
+    width: 20px;
+    height: 20px;
+}
+
+
+/* Sections in Table*/
+
+.sections {
+    display: flex;
+    text-transform: uppercase;
+    justify-content: center;
+    gap: 6px;
+}
+
+.section {
+    width: 24px;
+    border-radius: 4px;
+    height: 24px;
+    display: grid;
+    place-items: center;
+    border: 1px solid grey;
+}
+
+.section.a {
+    color: #c86e00;
+    border-color: #c86e00;
+    background-color: #ffeac2;
+}
+
+.section.b {
+    color: #df0000;
+    border-color: #df0000;
+    background-color: #ffd3d3;
+}
+
+.section.c {
+    color: #009022;
+    border-color: #009022;
+    background-color: #c7f0cf;
+}
+
+.section.d {
+    color: #c000a9;
+    border-color: #c000a9;
+    background-color: #fbb6f3;
+}
+
+.section.e {
+    color: #414141;
+    border-color: #414141;
+    background-color: #c7c7c7;
+}
+
+.section.f {
+    color: #9e9300;
+    border-color: #9e9300;
+    background-color: #ebe8bc;
+}
+
+.section.g {
+    color: #75a300;
+    border-color: #75a300;
+    background-color: #bff5d1;
+}
