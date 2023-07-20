@@ -18,8 +18,8 @@ export default function Login({ user }) {
   const [isLoading, setIsLoading] = useState(false)
 
   // Cancel Ref
-  const isCancel = useRef()
-  isCancel.current = false
+ // const isCancel = useRef()
+ // isCancel.current = false
 
   const handleSubmit = async (e) => {
     e.preventDefault()
