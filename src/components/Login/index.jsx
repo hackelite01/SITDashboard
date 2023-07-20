@@ -19,7 +19,7 @@ export default function Login({ user }) {
 
   // Cancel Ref
  const isCancel = useRef()
- // isCancel.current = false
+ isCancel.current = false
 
   const handleSubmit = async (e) => {
     e.preventDefault()
